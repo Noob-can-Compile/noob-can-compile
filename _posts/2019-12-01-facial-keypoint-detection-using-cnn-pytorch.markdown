@@ -55,11 +55,11 @@ for i, tx in enumerate([rescale, crop, composed]):
 plt.show()
 ```
 
-Output of Transformation:
+**Output of Transformation:**
 
 ![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-output-of-transformation.png)
 
-Creating the Transformed Dataset:
+**Creating the Transformed Dataset:**
 
 ```python
 # define the data tranform
@@ -77,7 +77,7 @@ transformed_dataset = FacialKeypointsDataset(csv_file='/data/training_frames_key
 
 Here **_224 * 224px_** are standardized input image size that is obtained by transforms and the output class scores shall be **_136_** i.e. **_136/2 = 68_**
 
-[image]
+![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-standard-input-size-of-images.png)
 
 ## Define the CNN Architecture:
 
@@ -217,7 +217,7 @@ To quickly observe how our model is training and decide on whether or not we sho
 Use these initial observations to make changes to your model and decide on the best architecture before you train for many epochs and create a final model.
 
 - **Training Loss:**  
-[image]  
+![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-training-loss.png)  
 Once you’ve found a good model, save it. So that you can load and use it later.  
 After you’ve trained a neural network to detect facial keypoints, you can then apply this network to any image that includes faces.
 
@@ -245,15 +245,16 @@ fig = plt.figure(figsize=(9,9))
 
 plt.imshow(image_with_detections)
 ```
-[image]
+- **Haar Cascade Detector**
+![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-haar-cascade-detector.png)
 
 ### Transform each detected face into an input Tensor  
 You’ll need to perform the following steps for each detected face:  
 1. Convert the face from RGB to grayscale
 2. Normalize the grayscale image so that its color range falls in [0,1] instead of [0,255]
 3. Rescale the detected face to be the expected square size for your CNN (224x224, suggested)  
-4. Reshape the numpy image into a torch image  
-[image]
+4. Reshape the numpy image into a torch image   
+![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-mitchelle-keypoints.png)
 
 ### Detect and display the predicted keypoints  
 After each face has been appropriately converted into an input Tensor for our network to see as input, we can apply the network to each face. The output should be the predicted facial keypoints.  
@@ -305,5 +306,5 @@ for (x,y,w,h) in faces:
     showpoints(image,keypoints)
 ```
 #### Output:
-[image]
+![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-facial-keypoints-detected.png)
 
