@@ -6,7 +6,7 @@ title: "Facial Keypoint Detection using CNN & PyTorch"
 
 >Facial Keypoints are also called Facial Landmarks which generally specify the areas of the nose, eyes, mouth, etc on the face, classified by **68 key points, with coordinates (x, y), for that face**. With Facial Keypoints, we can achieve facial recognition, emotion recognition, etc.
 
-![image]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-dots-represents-keypoints.png)  
+![png]({{ BASE_PATH }}/images/2019-12-01-facial-keypoint-detection-using-cnn-pytorch-dots-represents-keypoints.png)  
 ## Selecting the Dataset:
 
 We’ll be using [YouTube Faces Dataset](https://www.cs.tau.ac.il/~wolf/ytfaces/). It is a dataset that contains 3,425 face videos designed for studying the problem of unconstrained face recognition in videos. These videos have been fed through processing steps and turned into sets of image frames containing one face and the associated keypoints.
