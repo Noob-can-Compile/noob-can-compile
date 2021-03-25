@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Facial Keypoint Detection using CNN & PyTorch"
+title: "Facial Keypoint Detection using CNN & PyTorch"  
+author: krunal kshirsagar
 ---
 ## What are Facial Key-points?
 
