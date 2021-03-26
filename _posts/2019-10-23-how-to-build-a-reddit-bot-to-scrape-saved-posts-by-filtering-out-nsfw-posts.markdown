@@ -6,7 +6,7 @@ author: krunal kshirsagar
 <img src="{{ site.baseurl }}/images/2019-10-23-how-to-build-a-reddit-bot-to-scrape-saved-posts-by-filtering-out-nsfw-posts.png">
 
 # Overview:
-This script filters out the NSFW posts and scrapes only the Non-NSFW posts which are stored in saved posts from your Reddit account.
+This script filters out the NSFW posts and scrapes only the Non-NSFW posts which are stored in `saved posts` of your Reddit account into a `.csv` file.  
 As I was implementing this script, I realized that my code isn’t universal. Therefore, I would like to provide you with my code and in order to get the script running for you, you need to tweak some class names or element id according to your Reddit account via CSS query selector by inspecting elements in your browser.  
 However, Do run the script initially by inserting your credentials wherever asked. for example wherever there is `Your-username` or `Your-password` written in the script, do insert your Reddit **_username/email id_** and **_password_** there.  
 ### Here’s how to do it:
