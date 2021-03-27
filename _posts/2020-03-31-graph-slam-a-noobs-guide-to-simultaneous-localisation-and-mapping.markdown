@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Graph SLAM: A Noob’s Guide to Simultaneous Localisation And Mapping"  
+title: "Graph SLAM: A Noob’s Guide to Simultaneous Localisation and Mapping"  
 author: krunal kshirsagar
 ---
 - ## Implementation of SLAM on a 2D Graph from Scratch using Python
