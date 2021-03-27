@@ -21,8 +21,9 @@ But according to **[Kalman filters](https://noob-can-compile.github.io/home/2020
 
 <img src="{{ site.baseurl }}/images/2020-03-31-graph-slam-a-noobs-guide-to-simultaneous-localisation-and-mapping-gaussian-centered-around-the-location-of-robot-after-motion-update.png
 ">
-
+   
 # Here’s the math for the Gaussian of x variable:  
+
 Rather than setting x1 to x0+10, let’s express it in Gaussian that peaks when these two things are the same. So, if you subtract x1-x0-10, put this into a square format, and turn this into a Gaussian, we get a probability distribution that relates x1 and x0. We can do the same for y. Since there is no change in y according to our motion, y1 & y0 are as close together as possible.
 
 <img src="{{ site.baseurl }}/images/2020-03-31-graph-slam-a-noobs-guide-to-simultaneous-localisation-and-mapping-likelihood.png
@@ -72,7 +73,7 @@ distance           = 20.0     # distance by which robot (intends to) move each i
 data = make_data(N, num_landmarks, world_size, measurement_range, motion_noise, measurement_noise, distance)
 ```
 
-#### Let’s write our two main functions that move our robot around, help locate landmarks and measure the range between them on a 2D map:  
+# Let’s write our two main functions that move our robot around, help locate landmarks and measure the range between them on a 2D map:  
 
 - **Move:** attempts to move the robot by dx, dy.
 Sense: returns x and y distances to landmarks within the visibility range.  
