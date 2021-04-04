@@ -19,9 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Krunal Kshirsagar
+email: krunalkshirsagar29@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Differential Geometry, Probabilistic Methods and Privacy-Preserving Machine Learning for Medical Imaging.
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://noob-can-compile.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: krunal_wrote
 github_username: Noob-can-Compile
@@ -32,13 +33,12 @@ linkedin_username: krunalkshirsagar
 twitter:
   username: krunal_wrote
 
-email: krunalkshirsagar29@gmail.com
-
 permalink: /:categories/:year/:month/:title/
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-scholar
 # Exclude from processing.
