@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "
-Making Autonomous Vehicles Robust with Active Learning, Federated Learning and V2X Communication"  
+title: "Making Autonomous Vehicles Robust with Active Learning, Federated Learning and V2X Communication"  
 author: krunal kshirsagar
 ---
 
