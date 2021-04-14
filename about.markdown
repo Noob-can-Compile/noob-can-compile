@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img alt="Krunal Kshirsagar" src="/images/profile.jpeg"
+<img alt="Krunal Kshirsagar" src="/images/profile.jpg"
     style="float: right; max-width: 33%; margin: 0 0 1em 2em;">
 
 My name is Krunal Kshirsagar, a privacy preserving machine learning researcher and differential geometry enthusiast.
