@@ -53,7 +53,7 @@ the back of a truck or car which can confuse the model.
 
 **To understand how active learning will work with autonomous vehicles we can look at some examples:**
 
-# Good Drivers and Bad Drivers
+- # Good Drivers and Bad Drivers
 Let’s take lane changing task of autonomous vehicles for e.g., it is one of the
 most crucial tasks in autonomous driving where a vehicle needs to change its
 lane in order to overtake the vehicle cruising in front of it also keeping in check of
@@ -78,7 +78,7 @@ cannot be determined from the conventional machine learning model. It will
 look for the hard negative samples from the cluster of data and try and fit the
 model.
 
-# Outlier Detection
+- # Outlier Detection
 Outliers are the anomalies that a system comes across when training machine
 learning models. In simple words, outliers are exception samples that have less
 likelihood than a specified threshold. Thus, the removal of outliers can be the
@@ -132,7 +132,7 @@ vehicle-to-grid (V2G).
 
 **Let’s take an example of potholes.**
 
-**Potholes:** Whichever vehicle has identified the pothole, avoided it, and drove
+- **Potholes:** Whichever vehicle has identified the pothole, avoided it, and drove
 around it or could have slowed down the vehicle, instead of hitting into it. That vehicle’s data and model are sent to the cloud over the network channel, where
 the active learner classifies the data as good driving data, and the data is then
 added to the training pool. Further, the model is aggregated, trained on that
