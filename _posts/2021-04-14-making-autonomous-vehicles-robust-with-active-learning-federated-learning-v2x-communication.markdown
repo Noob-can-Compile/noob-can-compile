@@ -22,7 +22,7 @@ across multiple agent vehicles on the uniquely labelled data.
 
 ## Introduction
 Autonomous vehicles possess a complex system. The system is an amalgamation of many technologies including perception, prediction, sensing, localisation,
-mapping, interactions with cloud platforms and data storage. With the advent of autonomous vehicles and organisations looking forward to achieving level 5 autonomy, we have to shift our attention towards data, edge-to-edge computing and better machine learning models to make autonomous vehicles robust and safer for smooth navigation from one part of the world to another, while processing the data and simultaneously preserving privacy wirelessly.
+mapping, interactions with cloud platforms and data storage. With the advent of autonomous vehicles and organisations looking forward to achieving level 5 autonomy, we have to shift our attention towards data, edge-to-edge computing and better machine learning models to make autonomous vehicles robust and safer for smooth navigation from one part of the world to another, while processing the data and simultaneously preserving the privacy wirelessly.
 
 ## Data
 In the new age of technology, data is like the holy grail that every organisation
@@ -89,8 +89,8 @@ we rectify our data training pool. Consequently, making a robust classification
 process.
 
 # Steps to perform the desired machine learning task:
-**_1. Initialize the Active Learner(Query Selector)._**  
-**_2. The learner then predicts the informativeness of each data point from the unlabeled data pool and chooses the most informative unlabeled sample._**  
+**_1. Initialise the Active Learner(Query Selector)._**  
+**_2. The learner then predicts the informativeness of each data point from the unlabelled data pool and chooses the most informative unlabelled sample._**  
 **_3. An oracle labels the query data and adds them to the training dataset._**   
 **_4. The learner is re-trained on the updated dataset, that’s one iteration._**  
 **_5. Repeat the steps with other rounds of informativeness estimation._**  
@@ -168,9 +168,7 @@ the respective autonomous vehicle’s organisation?
 Also, with edge computing, it’s important to have reasonable energy consumption with sufficient computing
 power. And as far as V2X communication is concerned, it is in the early stages,
 tackling the problems such as latency, bandwidth, reliability of the network issues and security from various attacks like DoS and distributed DoS (DDoS)
-attacks. Further heavy research is needed for reducing the model complexity
-and maintaining the accuracy of the model.
-Although performing federated learning and updating parameters over V2X
+attacks. Although performing federated learning and updating parameters over V2X
 seem possible, the parameters need to be quantised before sending over the
 network. Parameter quantisation will lead to the robustness of models from
 quantisation error. The wireless channel quality should be considered for convergence time of the model that includes the computation time on local edge
