@@ -273,7 +273,7 @@ if(mu is not None):
 <img src="{{ site.baseurl }}/images/2020-03-31-graph-slam-a-noobs-guide-to-simultaneous-localisation-and-mapping-estimated-robot-poses-and-landmarks.png
 ">
 
-# Visualize the constructed world:
+# Visualise the constructed world:
 
 ```python
 # import the helper function
